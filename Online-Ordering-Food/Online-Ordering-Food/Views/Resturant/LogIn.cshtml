@@ -1,0 +1,102 @@
+﻿@model Online_Ordering_Food.Models.UserInfo
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Log In</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="User Profile Form A Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+    <script type="application/x-javascript">
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Meta tag Keywords -->
+    <!-- css files -->
+    <link href="~/login/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="~/login/css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
+    <!-- //css files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!--//online-fonts -->
+    <link rel="stylesheet" href="~/HomeStuff/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/HomeStuff/css/main.css">
+    <link rel="stylesheet" href="~/HomeStuff/css/red-color.css">
+</head>
+<body>
+    <header class="stick">
+        <div class="topbar">
+            <div class="container">
+                <div class="topbar-register">
+                    <a class="log-popup-btn" href="#" itemprop="url">@Html.ActionLink("MENU", "Menu")</a>
+                </div>
+                <div class="topbar-register">
+                    <a class="log-popup-btn" href="#" itemprop="url">@Html.ActionLink("HOME", "Home")</a>
+                </div>
+            </div>
+        </div><!-- Topbar -->
+        <div class="logo-menu-sec">
+        </div><!-- Logo Menu Section -->
+    </header>
+
+    <div class="header">
+        <h1>Log In Form</h1>
+    </div>
+    <div class="w3-main">
+        <div class="form-w3l">
+            <div class="img">
+                <img src="~/login/images/profile3.png" alt="image">
+                <h2>Log In here</h2>
+            </div>
+            <form action="#" method="post">
+
+
+
+
+
+                <div class="w3l-user">
+                    <span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
+                    @*<input type="text" name="username" placeholder="username" required="" />*@
+                    @Html.EditorFor(model => model.username, new { htmlAttributes = new { @type = "text", @name = "username", @placeholder = "username", @required = "" } })
+                    <div class="clear"></div>
+                </div>
+
+
+
+
+
+                <div class="w3l-password">
+                    <span><i class="fa fa-lock w3l-2" aria-hidden="true"></i></span>
+                    @*<input type="password" name="password" placeholder="password" required="" />*@
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @type = "password", @name = "Password", @placeholder = "password", @required = "" } })
+                    <div class="clear"></div>
+                </div>
+
+
+
+                <div class="w3l-btn">
+                    <input type="submit" name="button" value="Log In" />
+                </div>
+            </form>
+
+            <div> Don't have an account? <a href="~/Resturant/Regestration" style="color:white">Create a new Account</a> </div>
+
+
+            <div class="form-group">
+                <div class="about_area">
+                    <label class="label-info">@ViewBag.message</label>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

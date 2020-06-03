@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Online_Ordering_Food.Models.Product>
+
+@{
+    ViewBag.Title = "Update Product";
+}
+
+@using (@Html.BeginForm("ProductDetails", "Resturant", FormMethod.Post, htmlAttributes: new { @class = "search-margin" }))
+{
+
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-4">
+            <br />
+            @Html.Label("Search Products by Category")
+            <br />
+            <div class="input-group">
+                @Html.TextBox("SearchTerm", null, new { @class = "form-control", id = "txtsearch" })
+                <span class="input-group-btn">
+                    <input class="btn btn-primary" type="submit" value="Search" />
+                </span>
+            </div>
+        </div>
+    </div>
+
+}
+
+
+
+@foreach (var item in Model)
+{
+    <div style="display:inline-block">
+        <ul>
+            <li>
+                @Html.DisplayFor(modelItem => item.Name)
+            </li>
+            <li>
+                <img src="~/Uploads/@Html.DisplayFor(modelItem => item.Image)"
+                     class="thumbnail"
+                     style="width:150px; height:150px;" />
+            </li>
+            <li>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-primary", @style = "margin-bottom:10px" })
+            </li>
+
+        </ul>
+    </div>
+
+}

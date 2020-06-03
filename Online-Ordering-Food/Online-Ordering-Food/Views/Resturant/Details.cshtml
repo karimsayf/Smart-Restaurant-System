@@ -1,0 +1,62 @@
+﻿@model Online_Ordering_Food.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+
+<div>
+    <h4>Product Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <br />
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <br />
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+
+            <img src="~/Uploads/@Html.DisplayFor(model => model.Image)"
+                 class="thumbnail"
+                 style="width:150px; height:150px;" />
+
+        </dd>
+        <br />
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <br />
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.Category_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.Category_Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <hr />
+    @Html.ActionLink("Back to Product Dietails", "ProductDetails")
+</p>

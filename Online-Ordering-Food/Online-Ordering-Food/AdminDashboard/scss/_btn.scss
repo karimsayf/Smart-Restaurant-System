@@ -1,0 +1,149 @@
+.boxed-btn {
+	background: #fff;
+	color: #131313;
+	display: inline-block;
+	padding: 14px 44px;
+	font-family: $font1;
+	font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid #F0542C;
+    letter-spacing: 3px;
+    // width: 180px;
+    text-align: center;
+    color: #F0542C !important;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+        background: #F0542C;
+        color: #fff !important;
+        border: 1px solid #F0542C;
+    }
+    &:focus{
+        outline: none;
+    }
+    &.large-width{
+        width: 220px;
+    }
+}
+.boxed-btn3 {
+	background: #F2C64D;
+	color: #fff;
+	display: inline-block;
+	padding: 18px 44px;
+	font-family: $font1;
+	font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    border: 1px solid transparent;
+    // width: 180px;
+    text-align: center;
+    color: #fff !important;
+    text-transform: uppercase;
+    @include transition(.5s);
+    @include border-radius(30px);
+    padding: 9px 30px;
+    cursor: pointer;
+    &:hover{
+        background: transparent;
+        color: #F2C64D !important;
+        border: 1px solid #F2C64D;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.boxed-btn5 {
+
+	display: inline-block;
+	font-family: $font1;
+	font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    border: 1px solid transparent;
+    // width: 180px;
+    text-align: center;
+    color: #fff !important;
+    text-transform: capitalize;
+    @include transition(.5s);
+    @include border-radius(50px);
+	padding: 22px 44px;
+    cursor: pointer;
+    background: transparent;
+    color: #F0542C!important;
+    border: 1px solid #F0542C;
+    &:hover{
+        background: transparent;
+        color: #fff !important;
+        background: #F0542C;
+        color: #fff;
+    }
+    &:focus{
+        outline: none;
+    }
+    @media #{$mobile_device} {
+        padding: 12px;
+    }
+    @media #{$tablet_device} {
+        padding: 12px;
+    }
+    @media #{$mid_device} {
+        padding: 12px;
+    }
+}
+.boxed-btn2 {
+	background: transparent;
+	color: #fff;
+	display: inline-block;
+	padding: 18px 24px;
+	font-family: $font1;
+	font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    &:hover{
+        background: #fff;
+        color: #131313 !important;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.line-button{
+    color: #919191;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    &::before{
+        position: absolute;
+        content: "";
+        background: #919191;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+    }
+    &:hover{
+        color: #F0542C;
+    }
+    &:hover::before{
+        background: #F0542C;
+    }
+}
+.book_now{
+    display: inline-block;
+    font-size: 14px;
+    color: #F0542C;
+    border: 1px solid #F0542C;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    &:hover{
+        background: #F0542C;
+        color: #fff;
+    }
+}

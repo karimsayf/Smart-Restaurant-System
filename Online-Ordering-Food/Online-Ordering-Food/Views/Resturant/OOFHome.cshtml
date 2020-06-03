@@ -1,0 +1,182 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Home</title>
+    <link rel="stylesheet" href="~/HomeStuff/css/icons.min.css">
+    <link rel="stylesheet" href="~/HomeStuff/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/HomeStuff/css/animate.min.css">
+    <link rel="stylesheet" href="~/HomeStuff/css/main.css">
+    <link rel="stylesheet" href="~/HomeStuff/css/red-color.css">
+    <link rel="stylesheet" href="~/HomeStuff/css/yellow-color.css">
+    <link rel="stylesheet" href="~/HomeStuff/css/responsive.css">
+    <style>
+
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button5 {
+            background-color: #e7e7e7;
+            color: black;
+            border: 2px solid #555555;
+        }
+
+            .button5:hover {
+                background-color: #555555;
+                color: white;
+            }
+    </style>
+</head>
+<body itemscope>
+    <header class="stick">
+        <div class="topbar">
+            <div class="container">
+                <div class="topbar-register">
+                    <a class="log-popup-btn" href="#" title="Login" itemprop="url">@Html.ActionLink("LOGOUT", "Home")</a>
+                </div>
+                <div class="topbar-register">
+                    <a class="log-popup-btn" href="#" itemprop="url">@Html.ActionLink("MENU", "OOFMenu")</a>
+                </div>
+                <div class="topbar-register">
+                    <a class="log-popup-btn" href="#" itemprop="url">@Html.ActionLink("HOME", "OOFHome")</a>
+                </div>
+            </div>
+        </div><!-- Topbar -->
+        <div class="logo-menu-sec">
+        </div><!-- Logo Menu Section -->
+    </header><!-- Header -->
+    <div class="responsive-header">
+        <div class="responsive-topbar">
+        </div>
+        <div class="responsive-logomenu">
+            <div class="logo"><h1 itemprop="headline"><a href="index-2.html" title="Home" itemprop="url"></a></h1></div>
+            <span class="menu-btn yellow-bg brd-rd4"><i class="fa fa-align-justify"></i></span>
+        </div>
+        <div class="responsive-menu">
+            <span class="menu-close red-bg brd-rd3"><i class="fa fa-close"></i></span>
+            <div class="topbar-register">
+                <a class="log-popup-btn" href="#" title="Login" itemprop="url">LOGIN</a> / <a class="sign-popup-btn" href="#" title="Register" itemprop="url">REGISTER</a>
+            </div>
+        </div><!-- Responsive Menu -->
+    </div><!-- Responsive Header -->
+    <section>
+        <div class="block">
+            <div style="background-image: url(../../HomeStuff/images/topbg.jpg);" class="fixed-bg"></div>
+            <div class="restaurant-searching text-center">
+                <div class="restaurant-searching-inner">
+                    <h2 itemprop="headline">Order <span>Food Online From</span> the Best Restaurant</h2>
+                    <div class="funfacts">
+                        <div class="col-md-3 col-sm-6 col-lg-3">
+                            <div class="fact-box">
+                                <i class="brd-rd50"><img src="~/HomeStuff/images/resource/fact-icon1.png" alt="fact-icon1" itemprop="image"></i>
+                                <div class="fact-inner">
+                                    <strong><span class="counter">+100</span></strong>
+                                    <h5>Lovers</h5>
+                                </div>
+                            </div><!-- Fact Box -->
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-lg-3">
+                            <div class="fact-box">
+                                <i class="brd-rd50"><img src="~/HomeStuff/images/resource/fact-icon2.png" alt="fact-icon2" itemprop="image"></i>
+                                <div class="fact-inner">
+                                    <strong><span class="counter">158</span></strong>
+                                    <h5>People Served</h5>
+                                </div>
+                            </div><!-- Fact Box -->
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-lg-3">
+                            <div class="fact-box">
+                                <i class="brd-rd50"><img src="~/HomeStuff/images/resource/fact-icon3.png" alt="fact-icon3" itemprop="image"></i>
+                                <div class="fact-inner">
+                                    <strong><span class="counter">659</span>K</strong>
+                                    <h5>Happy Service</h5>
+                                </div>
+                            </div><!-- Fact Box -->
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-lg-3">
+                            <div class="fact-box">
+                                <i class="brd-rd50"><img src="~/HomeStuff/images/resource/fact-icon4.png" alt="fact-icon4" itemprop="image"></i>
+                                <div class="fact-inner">
+                                    <strong><span class="counter">235</span></strong>
+                                    <h5>Regular Watchers</h5>
+                                </div>
+                            </div><!-- Fact Box -->
+                        </div>
+                    </div><!-- Fun Facts -->
+                </div>
+                <img class="left-scooty-mockup" src="~/HomeStuff/images/resource/restaurant-mockup1.png" alt="restaurant-mockup1.png" itemprop="image">
+            </div><!-- Restaurant Searching -->
+        </div>
+    </section>
+    <section>
+        <div class="block blackish low-opacity">
+            <div class="fixed-bg" style="background-image: url(~/HomeStuff/images/parallax1.jpg);"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-lg-12">
+                        <div class="title1-wrapper text-center">
+                            <div class="title1-inner">
+                                <span>Website for Our Restaurant</span>
+                                <h2 class="text-white" itemprop="headline">easy order in 3 steps</h2>
+                            </div>
+                        </div>
+                        <div class="remove-ext text-center">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                    <div class="step-box wow fadeIn" data-wow-delay="0.2s">
+                                        <i><img src="~/HomeStuff/images/resource/setp-img1.png" alt="setp-img1.png" itemprop="image"> <span class="brd-rd50 red-bg">1</span></i>
+                                        <div class="setp-box-inner">
+                                            <h4 itemprop="headline">Explore The Food</h4>
+                                            <p itemprop="description">get to look at our amazing dishs</p>
+                                        </div>
+                                    </div><!-- Step Box -->
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                    <div class="step-box wow fadeIn" data-wow-delay="0.4s">
+                                        <i><img src="~/HomeStuff/images/resource/setp-img2.png" alt="setp-img2.png" itemprop="image"> <span class="brd-rd50 red-bg">2</span></i>
+                                        <div class="setp-box-inner">
+                                            <h4 itemprop="headline">Choose a Tasty Dish</h4>
+                                            <p itemprop="description">choose what you loved</p>
+                                        </div>
+                                    </div><!-- Step Box -->
+                                    <a class="button button5" href="~/Resturant/OOFMenu">Order Now</a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                    <div class="step-box wow fadeIn" data-wow-delay="0.6s">
+                                        <i><img src="~/HomeStuff/images/resource/setp-img3.png" alt="setp-img3.png" itemprop="image"> <span class="brd-rd50 red-bg">3</span></i>
+                                        <div class="setp-box-inner">
+                                            <h4 itemprop="headline">Order Now</h4>
+                                            <p itemprop="description">stay safe waiting our delivery</p>
+                                        </div>
+                                    </div><!-- Step Box -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="~/HomeStuff/js/jquery.min.js"></script>
+    <script src="~/HomeStuff/js/bootstrap.min.js"></script>
+    <script src="~/HomeStuff/js/plugins.js"></script>
+    <script src="~/HomeStuff/js/main.js"></script>
+</body>
+</html>

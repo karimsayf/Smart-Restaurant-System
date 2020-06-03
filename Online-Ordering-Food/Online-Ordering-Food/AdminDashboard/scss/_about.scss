@@ -1,0 +1,160 @@
+.about_area{
+    padding-bottom: 210px;
+    padding-top: 150px;
+    background-image: url(../img/banner/burger_bg_1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @media #{$mobile_device} {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @media #{$tablet_device} {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @media #{$mid_device} {
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+    .about_info{
+        p{
+            font-size: 16px;
+            line-height: 28px;
+            font-size: 16px;
+            line-height: 28px;
+            margin-top: 0;
+            margin-bottom: 37px;
+        }
+        a{
+            @media #{$mobile_device} {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .about_thumb2{
+        position: relative;
+        @media #{$tablet_device}{
+            margin-bottom: 30px;
+        }
+        @media #{$mobile_device}{
+            margin-bottom: 40px;
+        }
+        img{
+            width: 100%;
+        }
+        .img_1{
+            img{
+                width: 100%;
+            }
+        }
+        .img_2{
+            margin-top: 0px;
+            margin-left: 0px;
+            position: absolute;
+            right: -30px;
+            bottom: -60px;
+            @media #{$mobile_device}{
+                left: auto;
+                bottom: 0;
+                top: auto;
+                right: 0;
+                text-align: right;
+                bottom: -30px;
+            }
+            @media #{$tablet_device}{
+                left: auto;
+                bottom: 0;
+                top: auto;
+                right: -10px;
+                text-align: right;
+                bottom: -30px;
+            }
+            
+            img{
+                width: 100%;
+                @media #{$mobile_device}{
+                    width: 50%;
+                }
+                @media #{$tablet_device}{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+// about_info_area.
+.about_bg_1{
+    background-image: url(../img/banner/about_banner.png);
+}
+.about_info_area{
+    padding-left: 387px;
+    margin-top: 50px;
+    @media #{$tablet_device} {
+        padding-left: 0px;
+    }
+    @media #{$mobile_device} {
+        padding-left: 0px;
+    }
+    @media #{$mid_device} {
+        padding-left: 0px;
+    }
+    @media #{$large_device} {
+        padding-left: 0px;
+    }
+    .single_slider{
+        height: 750px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        @media #{$mobile_device} {
+            height: 400px;
+        }
+        @media #{$tablet_device} {
+            height: 400px;
+        }
+        @media #{$mid_device} {
+            height: 500px;
+        }
+    }
+}
+.about_main_info{
+    padding-top: 100px;
+    @media #{$mobile_device} {
+        padding-top: 50px;
+    }
+    .single_about_info{
+        margin-bottom: 43px;
+        @media #{$mobile_device} {
+            margin-bottom: 30px;
+        }
+        h3{
+            font-size: 22px;
+            color: #1F1F1F;
+            margin-bottom: 0;
+            margin-bottom: 10px;
+            line-height: 32px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 400;
+            color: #4D4D4D;
+            br{
+                @media #{$mobile_device} {
+                   display: none;
+                }
+                @media #{$tablet_device} {
+                   display: none;
+                }
+                @media #{$mid_device} {
+                   display: none;
+                }
+                @media #{$large_device} {
+                   display: none;
+                }
+            }
+        }
+    }
+}

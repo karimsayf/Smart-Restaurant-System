@@ -1,0 +1,72 @@
+.best_burgers_area{
+    padding-bottom: 115px;
+    padding-top: 140px;
+    background-image: url(../img/banner/burger_bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @media #{$mobile_device} {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    .single_delicious{
+        margin-bottom: 35px;
+        @media #{$mobile_device} {
+            display: block !important;
+            text-align: center;
+        }
+        @media #{$tablet_device}{
+            display: block !important;
+        }
+        .thumb{
+            @include border-radius(50%);
+            img{
+                @include border-radius(50%);
+            }
+        }
+        .info{
+            padding-left: 20px;
+            @media #{$mobile_device}{
+                padding-left: 0;
+                margin-bottom: 15px;
+                margin-top: 20px;
+            }
+            @media #{$tablet_device}{
+                padding-left: 0;
+                margin-top: 30px;
+            }
+            h3{
+                font-size: 30px;
+                color: #1A0D01;
+                font-weight: 700;
+                font-family: $font1;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28px;
+                margin-top: 16px;
+                margin-bottom: 6px;
+                color: #6E6E6E;
+                font-family: $font1;
+            }
+            span{
+                display: block;
+                font-weight: 700;
+                font-size: 24px;
+                color: #F0542C;
+                font-family: $font1;
+            }
+        }
+    }
+    .iteam_links{
+        // width: 100%;
+        margin-top: 50px;
+        @media #{$mobile_device} {
+            margin-top: 20px;
+        }
+        a{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,349 @@
+
+
+
+// video_area
+.video_bg{
+  background-image: url(../img/video/video.png);
+}
+.video_area{
+  padding: 175px 0;
+  background-size: cover;
+  background-position: center center;
+  @media #{$mobile_device} {
+    padding: 100px 0;
+  }
+  @media #{$tablet_device} {
+    padding: 100px 0;
+  }
+  .video_area_inner{
+    span{
+      font-size: 14px;
+      color: #fff;
+    }
+    h3{
+      font-size: 70px;
+      color: #fff;
+      line-height: 80px;
+      font-weight: 400;
+      font-family: $font3;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      @media #{$mobile_device} {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    }
+    span{
+      font-size: 24px;
+      font-family: $font2;
+      font-weight: 700;
+      display: block;
+      margin-top: 14px;
+      margin-bottom: 36px;
+    }
+    a{
+      width: 102px;
+      height: 102px;
+      background:#F0542C;
+      line-height: 102px;
+      font-size: 30px;
+      color: #fff;
+      display: inline-block;
+      @include border-radius(50%);
+      i{
+        position: relative;
+        left: 2px;
+      }
+    }
+  }
+}
+
+// features_room start
+.Burger_President_area{
+  display: block;
+  overflow: hidden;
+  @media #{$mobile_device} {
+    padding-top: 40px;
+}
+@media #{$tablet_device}{
+  padding-top: 0;
+}
+  .Burger_President_here{
+    .single_Burger_President{
+      position: relative;
+      width: 50%;
+      @media #{$mobile_device} {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+      @media #{$tablet_device} {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+      &::before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: #1A0D01;
+        z-index: 1;
+        opacity: .4;
+      }
+      float: left;
+      .room_thumb{
+        position: relative;
+        overflow: hidden;
+        // z-index: 8;
+        img{
+          width: 100%;
+          @include transform(scale(1));
+          @include transition(.5s);
+        }
+        .room_heading{
+          position: absolute;
+          left: 0;
+          right: 0;
+         bottom: 0px;
+         bottom: 60px;
+        left: 70px;
+         @media #{$mobile_device} {
+          left: 20px;
+          bottom: 20px;
+      }
+         @media #{$tablet_device} {
+          left: 30px;
+          bottom: 30px;
+      }
+         @media #{$mid_device} {
+          left: 20px;
+          bottom: 20px;
+      }
+          span{
+            font-size: 14px;
+            color: #FFFFFF;
+            margin-bottom: 9px;
+            display: block;
+            position: relative;
+            z-index: 8;
+          }
+          h3{
+            font-size: 34px;
+            color: #FFFFFF;
+            position: relative;
+            z-index: 8;
+            font-weight: 700;
+            @media #{$mobile_device} {
+              font-size: 20px;
+          }
+
+          }
+          span{
+            font-size: 30px;
+            font-weight: 700;
+            color: #F0542C;
+            font-family: $font1;
+            display: block;
+            margin-bottom: 3px;
+          }
+          p{
+            font-size: 16px;
+            color: #E8E8E8;
+            line-height: 28px;
+            position: relative;
+            z-index: 1;
+            margin-top: 9px;
+            margin-bottom: 18px;
+            @media #{$mobile_device} {
+              font-size: 14px;
+              line-height: 22px;
+              z-index: 1;
+              margin-top: 5px;
+              margin-bottom: 8px;
+            }
+            @media #{$tablet_device} {
+              font-size: 14px;
+              line-height: 22px;
+              z-index: 1;
+              margin-top: 5px;
+              margin-bottom: 8px;
+            }
+            br{
+              @media #{$mobile_device} {
+                display: none;
+              }
+            }
+          }
+          a{
+            color: #fff;
+            text-transform: capitalize;
+            font-weight: 600;
+            position: relative;
+            z-index: 8;
+            opacity: 1;
+            visibility: visible;
+            @media #{$mobile_device} {
+              padding: 6px 20px;
+            font-size: 12px;
+            }
+            &:hover{
+              color: #F2C64D;
+            }
+          }
+        }
+      }
+      &:hover{
+        img{
+          width: 100%;
+          @include transform(scale(1.1));
+        }
+        .room_heading{
+          a{
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// forQuery start
+.forQuery{
+  padding-top: 200px;
+  padding-bottom: 200px;
+  @media #{$mobile_device} {
+    padding: 60px 0;
+}
+  @media #{$tablet_device} {
+    padding: 100px 0;
+}
+  @media #{$mid_device} {
+    padding: 100px 0;
+}
+  @media #{$large_device} {
+    padding: 100px 0;
+}
+  .Query_border{
+    border: 1px solid #BABABA;
+    padding: 38px 50px;
+    @media #{$mobile_device} {
+     padding: 20px 20px;
+  }
+    .Query_text{
+      text-align: left;
+    }
+    p{
+      font-size: 30px;
+      color: #1F1F1F;
+      font-weight: 400;
+      margin-bottom: 0;
+      @media #{$mobile_device} {
+        margin-bottom: 20px;
+        font-size: 18px;
+        text-align: center;
+    }
+      @media #{$tablet_device} {
+        font-size: 18px;
+    }
+    }
+    .phone_num{
+      text-align: right;
+      @media #{$mobile_device} {
+        text-align: center;
+    }
+      a{
+        background: #009DFF;
+        color: #fff;
+        padding: 12px 53px;
+        border-radius: 30px;
+        display: inline-block;
+        font-size: 18px;
+        border: 1px solid transparent;
+        &:hover{
+          color: #009DFF;
+          border: 1px solid #009DFF;
+          background: #fff;
+        }
+      }
+    }
+
+  }
+}
+
+// instragram_area
+.instragram_area{
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 120px;
+  overflow: hidden;
+  @media #{$mobile_device} {
+    // margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+  @media #{$tablet_device} {
+    // margin-bottom: 30px;
+}
+  .single_instagram{
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    @include border-radius(50%);
+    overflow: hidden;
+    @media #{$mobile_device} {
+      width: 100%;
+      // margin-bottom: 30px;
+  }
+    @media #{$tablet_device} {
+      width: 100%;
+  }
+    img{
+      width: 100%;
+      @include transform(scale(1.1));
+      @include transition(.5s);
+    }
+    .ovrelay{
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      bottom: 15px;
+      background:rgba(26, 13, 1,.30);
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      opacity: 0;
+      visibility: hidden;
+      right: 15px;
+      border-radius: 50%;
+      border: 1px dashed#fff;
+      @include transform(scale(.8));
+      a{
+        color: #fff;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        text-align: center;
+        font-size: 30px;
+
+      }
+    }
+    &:hover{
+      .ovrelay{
+        @include transform(scale(1));
+        opacity: 1;
+        visibility: visible;
+      }
+      img{
+        @include transform(scale(1));
+      }
+    }
+  }
+}

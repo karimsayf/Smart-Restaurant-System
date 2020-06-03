@@ -1,0 +1,58 @@
+.section_title{
+    span{
+        color: #F2C64D;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 18px;
+        display: block;
+        font-family: $font4;
+    }
+    h3{
+        font-size: 50px;
+        font-weight: 700;
+        color: #1A0D01;
+        font-family: $font1;
+        text-transform: uppercase;
+        @media #{$mobile_device} {
+            font-size: 30px;
+            line-height: 36px;
+        }
+        @media #{$tablet_device} {
+            font-size: 36px;
+            line-height: 42px;
+        }
+        @media #{$mid_device} {
+            font-size: 36px;
+            line-height: 42px;
+        }
+        br{
+            @media #{$mobile_device} {
+                display: none;
+            }
+            @media #{$mobile_device} {
+                display: none;
+            }
+            @media #{$mid_device} {
+                display: none;
+            }
+        }
+    }
+}
+.mb-100{
+    margin-bottom: 100px;
+    @media #{$mobile_device} {
+        margin-bottom: 40px;
+    }
+}
+.mb-80{
+    margin-bottom: 80px;
+    @media #{$mobile_device} {
+        margin-bottom: 40px;
+    }
+}
+.mb-70 {
+    margin-bottom: 67px;
+    @media #{$mobile_device} {
+        margin-bottom: 40px;
+    }
+}
